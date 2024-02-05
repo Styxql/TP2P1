@@ -31,10 +31,10 @@ namespace TP2P1.Controllers.Tests
         public  void GetSeriesTest()
         {
             Task<ActionResult<IEnumerable<Serie>>> expectedSeries =  controller.GetSeries();
-
-
+          
+            
             // Assert
-            CollectionAssert.AreEqual(expectedSeries, actualSeries);
+            CollectionAssert.AreEqual(expectedSeries.Result, new List<Serie>);
 
         }
 }
