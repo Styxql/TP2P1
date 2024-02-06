@@ -1,6 +1,6 @@
-﻿namespace TP2P1.Models
+﻿namespace TP2P1.Models.EntityFramework;
+
+public partial class SeriePart
 {
-    public class SeriePart
-    {
-    }
+
 }
