@@ -22,11 +22,11 @@ app.UseCors(policy =>
     policy.WithOrigins("https://localhost:7232;http://localhost:5067").AllowAnyMethod().AllowAnyHeader().AllowCredentials());
 app.UseStaticFiles();
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+//if (app.Environment.IsDevelopment())
+//{
+//    app.UseSwagger();
+//    app.UseSwaggerUI();
+//}
 
 app.UseHttpsRedirection();
 
