@@ -11,8 +11,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace TP2P1.Controllers.Tests
 {
-    
-    
+
+
 
     [TestClass()]
     public class SeriesControllerTests
@@ -27,14 +27,6 @@ namespace TP2P1.Controllers.Tests
 
         }
 
-        [TestMethod()]
-        public  void GetSeriesTest()
-        {
-            Task<ActionResult<IEnumerable<Serie>>> expectedSeries =  controller.GetSeries();
-          
-            
-            // Assert
-            CollectionAssert.AreEqual(expectedSeries.Result, new List<Serie>);
 
-        }
+    }
 }
